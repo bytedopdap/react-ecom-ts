@@ -28,6 +28,13 @@
     background: none;
     border: none;
     outline: none;
+    transition: .5s;
+    &:hover{
+        .arrow{
+            border: solid white;
+        }
+        cursor: pointer;
+    }
 }
 #goLeft{
     left: 0;
@@ -38,3 +45,20 @@
     right: 0;
     @extend %btn-styles;
 }
+
+.arrow {
+    border: solid black;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 5px;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }

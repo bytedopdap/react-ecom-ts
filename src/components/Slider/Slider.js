@@ -27,8 +27,9 @@ const Slider = () => {
             </div>
           )
       })}
-      <button id="goLeft" onClick={goLeft}>Left</button>
-      <button id="goRight"onClick={goRight}>Right</button>
+      
+      <button id="goLeft" onClick={goLeft}><i class="arrow left"></i></button>
+      <button id="goRight"onClick={goRight}><i class="arrow right"></i></button>
 
     </div>
   );
